@@ -1,0 +1,614 @@
+/* * {
+  font-size: "Poppins", sans-serif;
+}
+
+display-flex,
+.display-flex,
+.display-flex-center,
+.signup-content,
+.signin-content,
+.socials {
+  display: flex;
+  display: -webkit-flex;
+}
+
+list-type-ulli,
+.socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -webkit-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
+}
+
+@media only screen and (max-width: 991px) {
+  .contact_info_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact_info_item:last-child {
+    margin-bottom: 0px;
+  }
+  
+  label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    color: #222;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .input_field {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .input_field:last-child {
+    margin-bottom: 0px;
+  }
+
+  .home-page .home-div h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  .home-page .home-div h2 {
+    font-weight: 500;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .contact_submit_button {
+    font-size: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+} */
+
+/* Signup Form Styles */
+.signup {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup .container {
+  max-width: 800px;
+  background: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-content {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  align-items: center;
+}
+
+.signup-form {
+  flex: 2; /* Take more space */
+  padding-right: 2em;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5em;
+  background: #fafafa;
+}
+
+.form-group i {
+  font-size: 20px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-group input[type="password"] {
+  font-family: 'Courier New', monospace;
+}
+
+input:focus {
+  border-color: #777;
+}
+
+input[type="submit"] {
+  background: #3498db;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #2980b9;
+}
+
+.signup-image {
+  flex: 1; /* Take less space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2em;
+}
+
+.signup-image figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.signup-image img:hover {
+  transform: scale(1.05);
+}
+
+.signup-image-link {
+  margin-top: 15px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.signup-image-link:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+
+/* Login Form Styles */
+.signin {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signin .container {
+  max-width: 800px;
+  background: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signin-content {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  align-items: center;
+}
+
+.signing-image {
+  flex: 1; /* Take less space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 2em;
+}
+
+.signing-image figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signing-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.signing-image img:hover {
+  transform: scale(1.05);
+}
+
+.signing-image-link {
+  margin-top: 15px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.signing-image-link:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+.signin-form {
+  flex: 2; /* Take more space */
+  padding-left: 2em;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5em;
+  background: #fafafa;
+}
+
+.form-group i {
+  font-size: 20px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-group input[type="password"] {
+  font-family: 'Courier New', monospace;
+}
+
+input:focus {
+  border-color: #777;
+}
+
+.form-group.form-button {
+  display: flex;
+  justify-content: center;
+}
+
+.form-submit {
+  background: #3498db;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-submit:hover {
+  background: #2980b9;
+}
+
+
+/* Contact Page Styles */
+
+/* Contact Info Section */
+.contact_info {
+  background-color: #f0f2f5;
+  padding: 2em 0;
+}
+
+.contact_info_item {
+  margin-bottom: 1.5em;
+}
+
+.contact_info_item img {
+  max-width: 40px;
+  margin-right: 1em;
+}
+
+.contact_info_title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact_info_text {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Contact Form Section */
+.contact_form {
+  background-color: #fff;
+  padding: 2em 0;
+}
+
+.contact_form_title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.contact_form_container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact_form_name {
+  display: flex;
+}
+
+.input_field {
+  width: calc(100% - 10px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact_form_message {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact_form_button {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.contact_submit_button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact_submit_button:hover {
+  background-color: #2980b9;
+}
+
+
+
+/* Home Page Styles */
+
+.home-page {
+  background-color: #3498db; /* Background color for the home page */
+  color: #fff; /* Text color */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-div {
+  text-align: center;
+}
+
+.home-div p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.home-div h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+
+/* About Page Styles */
+
+.container {
+  max-width: 800px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img img {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-head {
+  margin-bottom: 1.5em;
+}
+
+.profile-head h5 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.profile-head h6 {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.profile-rating span {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.nav-tabs {
+  margin-top: 1.5em;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0.5em;
+}
+
+.nav-tabs .nav-link {
+  font-size: 1em;
+  color: #333;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom-color: #3498db;
+}
+
+.profile-edit-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.profile-work p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.profile-work a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-work a:hover {
+  color: #2980b9;
+}
+
+.about-info {
+  padding-left: 2em;
+}
+
+.about-info label {
+  font-weight: bold;
+  color: #333;
+}
+
+.about-info p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+
+
+/* Error Page Styles */
+
+#not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found-404 {
+  font-size: 10em;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.not-found h2 {
+  font-size: 2em;
+  margin-top: 0.5em;
+  color: #333;
+}
+
+.not-found p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 2em;
+}
+
+.not-found a {
+  font-size: 1em;
+  color: #3498db;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.not-found a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
